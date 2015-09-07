@@ -1,0 +1,98 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[table]{xcolor}
+\usepackage{float}
+\usepackage[spanish]{babel}
+\usepackage{lastpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage[utf8]{inputenx}
+%\usepackage{algorithm2e}
+\usepackage{listings}
+\usepackage{pdfpages}
+\usepackage{tabularx}
+\usepackage{color}
+\usepackage{anysize}
+\usepackage{fancyhdr}
+\usepackage{ulem}
+%\usepackage{caption}
+\usepackage[font=footnotesize]{caption}
+\definecolor{deepblue}{RGB}{0,0,153}
+\definecolor{deepred}{RGB}{153,0,0}
+\definecolor{deepgreen}{RGB}{51,102,0}
+\definecolor{deepyellow}{RGB}{204,204,0}
+\marginsize{2cm}{2cm}{1cm}{1.5cm} % depende de anysize
+%\renewcommand*{\thefootnote}{\Roman{footnote}}
+\lstset{ %
+			language=Python,
+			basicstyle=\footnotesize,
+			numbers=left,
+			stepnumber=1,
+			numbersep=4pt,
+			tabsize=2,
+			otherkeywords={self}, 
+			keywordstyle=\color{deepred},
+			stringstyle=\color{deepgreen},
+			commentstyle=\color{deepblue},
+}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black,
+    linktoc=all
+}
+
+
+
+%\title{Multímetros en Corriente Continua}
+\title{Análisis de la Información}
+\author{
+        Grupo 2
+}
+\date{\today}
+\pagestyle{fancy}
+\lhead{1er Cuatrimestre 2015 \\ Grupo 2}
+\rhead{\includegraphics[scale=0.2]{images/FIUBA_ALTA.jpg}}
+\cfoot{}
+\rfoot{\thepage/\pageref{LastPage}}
+%\lfoot{asdasd}
+
+
+\begin{document}
+%\includepdf{attachments/caratula.pdf}
+
+
+%\newpage\null\thispagestyle{empty}\newpage
+\maketitle\thispagestyle{empty}
+
+\newpage\null\thispagestyle{empty}\newpage
+
+\newpage
+\tableofcontents
+
+\newpage\null\thispagestyle{empty}\newpage
+
+\section{Modelo de Negocio}
+	\subsection{Objetivo}
+		El objetivo de este trabajo consiste en evaluar la información referente a la empresa “IR-TOUR”. A partir de esto, modelaremos los procesos que realiza la empresa como respuesta a las diversas necesidades que trasmiten sus clientes.  
+
+	\subsection{Hipótesis y Supuestos}
+		\begin{itemize}
+			\item Sólo se realiza una anulación en caso de fuerza mayor por parte del proovedor o la no aceptación de nuevos términos por parte del cliente.
+			\item Las reservas se efectuan luego de confeccionar el contrato.
+			\item Los pagos son en cuotas fijas, sin inflación.
+			\item En caso de cancelación, la devolución de los pagos se realizará en un pago y en efectivo.
+			\item La modificación de un tour para un cliente no implica un cambio en la tarifa.
+			\item Los clientes siempre pagan antes de la fecha de vencimiento de cada cuota.
+			\item Los clientes poseen al menos un medio de pago válido.
+			\item La empresa posee los contactos necesarios para satisfacer la demanda general de viáticos, hospedajes y tours.
+			\item La empresa siempre puede contratar nuevos servicios o alternativas.
+			\item Los clientes regulares tienen al menos un modo de contacto para recibir ofertas.
+			\item El cliente retira las órdenes de servicio luego de haber abonado las cuotas correspondientes.
+		\end{itemize}
+
+\end{document}
